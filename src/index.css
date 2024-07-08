@@ -1,0 +1,86 @@
+/* .App {
+  font-family: sans-serif;
+  text-align: center;
+} */
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.input-text {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.input-text:focus {
+  border-color: #007bff;
+}
+
+.select-input {
+  width: calc(50% - 10px);
+  padding: 10px;
+  margin-bottom: 15px;
+  margin-right: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.select-input:last-of-type {
+  margin-right: 0;
+}
+
+.select-input:disabled {
+  background: #e9ecef;
+}
+
+.select-input:focus {
+  border-color: #007bff;
+}
+
+.output-text {
+  font-size: 18px;
+  color: #333333;
+  margin-top: 20px;
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 15px;
+  }
+
+  .input-text,
+  .select-input {
+    width: calc(100% - 20px);
+    margin-right: 0;
+  }
+
+  .select-input {
+    margin-bottom: 10px;
+  }
+}
